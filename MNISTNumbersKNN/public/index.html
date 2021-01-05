@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MNIST Numbers KNN</title>
+  <style type="text/css">
+
+    body, html {
+      text-align: center;
+      background-color: #333;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    h1 {
+      margin: 10px 10px 10px 10px;
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-family: monospace;
+      font-size: 1em;
+    }
+
+    button {
+      border-radius: 5px;
+      margin-top: 20px;
+      width: 100px;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    #canvas {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      border-radius: 5px;
+      display:block;
+      margin: 0 auto 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Number reading AI</h1>
+  <h2>Using Tensorflow to guess which number you draw</h2>
+
+  <p> Draw a number in the box below</p>
+  <canvas id="canvas"></canvas>
+  <button id="buttonPredict">Go</button>
+  <button id="buttonClear">Clear</button>
+  <p id="message">Loading Training Data...</p>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
